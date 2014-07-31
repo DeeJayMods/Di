@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Di" default="build">
+	<target name="build" depends="prepare, lint">
+	</target>
+	
+	<target name="prepare" depends="clean">
+		<mkdir dir="${basedir}/build/api" />
+		<mkdir dir="${basedir}/build/logs" />
+		<mkdir dir="${basedir}/build/coverage" />
+		<mkdir dir="${basedir}/build/pdepend" />
+	</target>
+	<target name="clean">
+		<delete dir="${basedir}/build/api" />
+		<delete dir="${basedir}/build/logs" />
+		<delete dir="${basedir}/build/coverage" />
+		<delete dir="${basedir}/build/pdepend" />
+	</target>
+
+	<target name="lint">
+		<apply executable="php">
+			<arg value="-l" />
+			<fileset dir="${basedir}/src">
+				<include name="**/*.php" />
+				<modified />
+			</fileset>
+			<fileset dir="${basedir}/test">
+				<include name="**/*.php" />
+				<modified />
+			</fileset>
+		</apply>
+	</target>
+
+<target name="phpunit">
+		<apply executable="phpunit">
+			<arg value="-l" />
+			<fileset dir="${basedir}/src">
+				<include name="**/*.php" />
+				<modified />
+			</fileset>
+			<fileset dir="${basedir}/test">
+				<include name="**/*.php" />
+				<modified />
+			</fileset>
+		</apply>
+	</target>
+
+</project>
