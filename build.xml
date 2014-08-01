@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Di" default="build">
-	<target name="build" depends="prepare, lint">
+	<target name="build" depends="prepare, lint,phploc">
 	</target>
 	
 	<target name="prepare" depends="clean">
@@ -44,4 +44,12 @@
 		</apply>
 	</target>
 
+<target name="phploc" description ="measure project by PHPLOC">
+	<exec executable="phploc">
+	<arg value="--count-tests"/>
+	<arg value="--log-csv"/>
+	<arg value="${basedir}/build/logs/phploc.csv"/> 
+	<arg value="${basedir}/src"/>
+	</exec>
+</target>
 </project>

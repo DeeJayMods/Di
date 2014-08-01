@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1406802128">
-  <project timestamp="1406802128">
+<coverage generated="1406815749">
+  <project timestamp="1406815749">
     <package name="Entity">
       <file name="/home/android/di/Di/src/entity/user.php">
         <class name="User" namespace="Entity">
