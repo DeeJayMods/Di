@@ -1,3 +1,4 @@
+<?php
 class serviceUserTest extends PHPunit_Framework_TestCase{
 
 	public function testFullName(){

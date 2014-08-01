@@ -30,19 +30,12 @@
 		</apply>
 	</target>
 
-<target name="phpunit">
-		<apply executable="phpunit">
-			<arg value="-l" />
-			<fileset dir="${basedir}/src">
-				<include name="**/*.php" />
-				<modified />
-			</fileset>
-			<fileset dir="${basedir}/test">
-				<include name="**/*.php" />
-				<modified />
-			</fileset>
-		</apply>
-	</target>
+	<target name="phpunit">
+<exec executable="phpunit" failonerror="true">
+<arg value="-c"/>
+<arg value="build/phpunit.xml.dist"/>
+</exec>
+</target>
 
 <target name="phploc" description ="measure project by PHPLOC">
 	<exec executable="phploc">

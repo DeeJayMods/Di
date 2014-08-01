@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="IMIE-CI" tests="3" assertions="3" failures="0" errors="0" time="0.016651">
-    <testsuite name="UserTest" file="/home/android/di/Di/test/unit/usertest.php" tests="3" assertions="3" failures="0" errors="0" time="0.016651">
-      <testcase name="testGetPrenom" class="UserTest" file="/home/android/di/Di/test/unit/usertest.php" line="5" assertions="1" time="0.012999"/>
-      <testcase name="testGetNom" class="UserTest" file="/home/android/di/Di/test/unit/usertest.php" line="10" assertions="1" time="0.001739"/>
-      <testcase name="testGetAge" class="UserTest" file="/home/android/di/Di/test/unit/usertest.php" line="15" assertions="1" time="0.001913"/>
+  <testsuite name="IMIE-CI" tests="3" assertions="3" failures="0" errors="0" time="0.018377">
+    <testsuite name="UserTest" file="/home/android/di/Di/test/unit/usertest.php" tests="3" assertions="3" failures="0" errors="0" time="0.018377">
+      <testcase name="testGetPrenom" class="UserTest" file="/home/android/di/Di/test/unit/usertest.php" line="5" assertions="1" time="0.014496"/>
+      <testcase name="testGetNom" class="UserTest" file="/home/android/di/Di/test/unit/usertest.php" line="10" assertions="1" time="0.002379"/>
+      <testcase name="testGetAge" class="UserTest" file="/home/android/di/Di/test/unit/usertest.php" line="15" assertions="1" time="0.001502"/>
     </testsuite>
   </testsuite>
 </testsuites>
